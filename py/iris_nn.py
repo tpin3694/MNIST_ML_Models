@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 seed = 2
 np.random.seed(seed)
 
-# Read data
+# Read data and combine
 train = pd.read_csv("data/iris_train.txt", sep=",", header = None)
 test = pd.read_csv("data/iris_test.txt", sep=",", header = None)
 dataframe = train.append(test)
