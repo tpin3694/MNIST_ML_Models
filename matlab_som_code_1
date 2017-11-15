@@ -1,0 +1,32 @@
+%....................libaries 
+%-------
+%----------
+
+load mnist_train.csv
+%x1 = mnist_test(:,1:100);
+%x = mnist_train(:,1:10);
+
+% Create a Self-Organizing Map
+dimension1 = 10;
+dimension2 = 10;
+net = selforgmap([dimension1 dimension2]);
+
+% Train the Network
+[net,tr] = train(net,x);
+
+% Test the Network
+y = net(x);
+
+% View the Network
+view(net)
+
+% Plots
+% Uncomment these lines to enable various plots.
+figure, plotsomtop(net)
+figure, plotsomnc(net)
+figure, plotsomnd(net)
+figure, plotsomplanes(net)
+figure, plotsomhits(net,x)
+figure, plotsompos(net,x)
+% figure, plot(x1(1:500),x1(500:999),'.');
+
