@@ -5,11 +5,11 @@ from sklearn.cross_validation import cross_val_score
 import matplotlib.pyplot as plt
 
 
-usr_dir = "/home/tpin3694/Documents/university/MSc/dataMining/group_work/emotion_recognition/"
+usr_dir = "/home/tpin3694/Documents/university/MSc/dataMining/group_work/emotion_recognition/data/mnist/split/"
 def data_load(directory, data_type):
     if data_type == "test" or data_type == "train":
         print("Loading " + str(data_type) + "ing data...")
-        data = pd.read_csv(usr_dir + "data/mnist/" + str(data_type) + ".csv")
+        data = pd.read_csv(usr_dir + str(data_type) + ".csv")
         print(str(data_type).capitalize() + "ing data successfully loaded!")
         return data
     else:
@@ -29,7 +29,7 @@ def main():
     train = data_load(usr_dir, "train")
     train_features = train.values[:, 1:].astype(int)
     train_target = train.values[:, 0].astype(int)
-    tree_counter = np.linspace(10, 200, 20, dtype= int)
+    tree_counter = np.linspace(10, 80, 20, dtype= int)
     mean_scores, sd_scores = [], []
     for tree in tree_counter:
         print("Processing Tree Number " + str(tree) + ".")
