@@ -5,7 +5,7 @@ from sklearn.cross_validation import cross_val_score
 import matplotlib.pyplot as plt
 
 
-usr_dir = "/home/tpin3694/Downloads/tsne/"
+usr_dir = "/home/tpin3694/Documents/university/MSc/dataMining/group_work/emotion_recognition/data/mnist/tsne/"
 def data_load(directory, data_type):
     if data_type == "test" or data_type == "train":
         print("Loading " + str(data_type) + "ing data...")
@@ -29,7 +29,7 @@ def main():
     train = data_load(usr_dir, "train")
     train_features = train.values[:, 1:].astype(int)
     train_target = train.values[:, 0].astype(int)
-    tree_counter = np.linspace(10, 40, 10, dtype= int)
+    tree_counter = np.linspace(10, 100, 20, dtype= int)
     mean_scores, sd_scores = [], []
     for tree in tree_counter:
         print("Processing Tree Number " + str(tree) + ".")
