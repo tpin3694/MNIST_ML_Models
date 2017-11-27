@@ -13,7 +13,6 @@ colours = rainbow(length(unique(train$label)))
 names(colours) = unique(train$label)
 
 tsne <- Rtsne(train[,-1], dims = 2, perplexity=30, verbose=TRUE, max_iter = 500)
-exeTimeTsne<- system.time(Rtsne(train[,-1], dims = 2, perplexity=30, verbose=TRUE, max_iter = 500))
 
 plot(tsne$Y, t='n', main="tsne")
 text(tsne$Y, labels=train$label, col=colours[train$label])
