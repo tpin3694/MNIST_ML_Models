@@ -4,10 +4,10 @@
 Data sourced from [here](https://archive.ics.uci.edu/ml/datasets/Grammatical+Facial+Expressions#)
 
 ### Accuracy Metrics
-* Random Forest: 96
+* Random Forest: 953
 * RF 2D: 96.7
 * RF 3D: 97.1
-* KNN: 93.4
+* KNN: 92.8
 * NN: 99.2
 * NN PCA: 99.3
 
@@ -18,6 +18,8 @@ Data sourced from [here](https://archive.ics.uci.edu/ml/datasets/Grammatical+Fac
 * KNN: 904s
 * KNN 2D:
 * KNN 3D:
+* KNN PCA: 
 * NN: 23.0s
 * NN PCA: 9.0s
 * NN 2D: 
+* NN 3D:
