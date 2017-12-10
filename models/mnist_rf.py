@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import cross_validate
+from sklearn.model_selection import cross_validate, train_test_split
 import matplotlib.pyplot as plt
 
 usr_dir = "/home/tpin3694/Documents/university/MSc/dataMining/group_work/emotion_recognition/data/mnist/dim_reduced/"
@@ -27,6 +27,8 @@ def plotter(scores, array1, array2, tree_list, dir):
     plt.savefig(dir + 'plots/tsne_cv_trees.png')
 
 train = data_load(usr_dir, "train")
+
+
 print(train.shape)
 train_features = train.values[:, 1:].astype(int)
 train_target = train.values[:, 0].astype(int)
