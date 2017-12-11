@@ -14,6 +14,7 @@ Data sourced from [here](https://archive.ics.uci.edu/ml/datasets/Grammatical+Fac
 * NN: 99.2
 * NN PCA: 99.3
 * NN 2D :98.8
+* NN 3D :96.9
 
 ### Runtime
 * RF: 106.9 seconds
