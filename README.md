@@ -7,7 +7,7 @@ Data sourced from [here](https://archive.ics.uci.edu/ml/datasets/Grammatical+Fac
 * Random Forest: 95.3
 * RF 2D: 96.7
 * RF 3D: 97.1
-* KNN: 92.8
+* KNN: 93.7
 * KNN 2D: 98.03
 * KNN 3D :98.14
 * KNN PCA :44.25
@@ -23,7 +23,7 @@ Data sourced from [here](https://archive.ics.uci.edu/ml/datasets/Grammatical+Fac
 * KNN: 904s
 * KNN 2D: 1s
 * KNN 3D: 2s
-* KNN PCA: 657s 
+* KNN PCA: 614s
 * NN: 26.0s
 * NN PCA: 9.0s
 * NN 2D: 4s
